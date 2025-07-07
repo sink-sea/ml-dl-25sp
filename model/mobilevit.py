@@ -3,6 +3,7 @@ import torch.nn as nn
 
 from einops import rearrange
 
+# Adapted from https://github.com/chinhsuanwu/mobilevit-pytorch
 
 def conv_1x1_bn(inp, oup):
     return nn.Sequential(

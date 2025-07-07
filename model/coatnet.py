@@ -4,6 +4,7 @@ import torch.nn as nn
 from einops import rearrange
 from einops.layers.torch import Rearrange
 
+# Adapted from https://github.com/chinhsuanwu/coatnet-pytorch
 
 def conv_3x3_bn(inp, oup, image_size, downsample=False):
     stride = 1 if downsample == False else 2
